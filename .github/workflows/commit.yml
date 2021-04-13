@@ -1,0 +1,34 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Commit
+
+# Controls when the action will run.
+on:
+  push:
+    branches: [ feature/*, bugfix/*, hotfix/* ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Usaaaae Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Create .env file
+      uses: SpicyPizza/create-envfile@v1
+      with:
+        envkey_SONARQUBE_HOST_URL: ${{ secrets.SONARQUBE_HOST_URL }}
+        envkey_SONARQUBE_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
+        file_name: .env
+    - run: npm ci
+    - run: npm run lint
+    - run: npm test
+    - run: npm run coveralls
+    - run: npm run sonarqube
