@@ -1,0 +1,22 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"module": "commonjs",
+		"outDir": "build",
+		"target": "es2017",
+		"isolatedModules": false,
+		"noEmit": false,
+		"baseUrl": "src",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true
+	},
+	"include": [
+		"next-env.d.ts",
+		"src/server/**/*.ts",
+		"src/shared/**/*.ts"
+	],
+	"exclude": ["node_modules"]
+}

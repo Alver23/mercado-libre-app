@@ -22,10 +22,12 @@ class Server extends ServerTemplate implements IBootstrap {
   protected errorHandlers(): void {}
 
   protected setMiddlewares(): void {
+    this.server.disable('x-powered-by');
+    this.server.set('trust proxy', true);
     this.server.use(cookieParser());
   }
 
-  protected setRoutes(): void {
+  protected async setRoutes(): Promise<void> {
     this.server.get(`${this.basePath}/health(check)?`, healthCheck());
   }
 }
