@@ -2,7 +2,7 @@
 import { act, render, screen } from '@testing-library/react';
 
 // Under test file
-import Home from '../../pages';
+import Home from '@alversoft/pages';
 
 describe('<Home />', () => {
   jest.useFakeTimers();
