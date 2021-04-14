@@ -10,9 +10,8 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "env:dev": "cat ./config/environments/.env ./config/environments/.env.development > .env",
     "env:prod": "cat ./config/environments/.env ./config/environments/.env.production > .env",
-    "lint": "eslint --ext .ts,.tsx ./src --ignore-path .eslintignore",
+    "lint": "eslint --ext .ts,.tsx ./src --ignore-path .eslintignore -f html -o reports/lint.html",
     "lint:fix": "npm run lint -- --fix",
-    "lint:report": "eslint --ext ts src/ -f html -o reports/lint.html",
     "prettier": "prettier --config .prettierrc --ignore-path ./.prettierignore --write src/**/*.{ts, tsx}",
     "release": "standard-version",
     "sonarqube": "gulp sonarqube",
@@ -20,6 +19,11 @@
     "test:watch": "npm test -- --verbose --watch"
   },
   "dependencies": {
+    "cookie-parser": "1.4.5",
+    "debug": "2.6.9",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "express-healthcheck": "0.1.0",
     "next": "10.1.3",
     "react": "17.0.2",
     "react-dom": "17.0.2"
@@ -41,11 +45,11 @@
     "@typescript-eslint/parser": "4.22.0",
     "babel-jest": "26.6.3",
     "coveralls": "3.1.0",
-    "dotenv": "8.2.0",
     "eslint": "7.24.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-config-prettier": "8.1.0",
+    "eslint-import-resolver-typescript": "2.4.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-prettier": "3.3.1",
@@ -66,11 +70,12 @@
     "rimraf": "3.0.2",
     "sonarqube-scanner": "2.8.0",
     "standard-version": "9.2.0",
+    "supertest": "6.1.3",
     "ts-node": "9.1.1",
     "typescript": "4.2.4"
   },
   "jestSonar": {
-    "reportPath": "coverage",
+    "reportPath": "reports",
     "reportFile": "test-report.xml",
     "indent": 4
   }

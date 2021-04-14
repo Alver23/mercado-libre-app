@@ -15,7 +15,7 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
-        "jsx": true
+      "tsx": true
     },
     "ecmaVersion": 12,
     "sourceType": "module"
@@ -25,6 +25,11 @@
       "@typescript-eslint",
       "prettier"
   ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
   "rules": {
     "import/extensions": ["error", "ignorePackages", { "ts": "never", "tsx": "never" }],
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
