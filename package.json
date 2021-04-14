@@ -55,7 +55,7 @@
     "gulp-nodemon": "2.5.0",
     "gulp-shell": "0.8.0",
     "gulp-typescript": "6.0.0-alpha.1",
-    "husky": "6.0.0",
+    "husky": "4.3.8",
     "identity-obj-proxy": "3.0.0",
     "jest": "26.6.3",
     "jest-html-reporters": "2.1.3",
