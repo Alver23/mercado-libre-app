@@ -1,5 +1,7 @@
 // Dependencies
 import 'module-alias/register';
+import 'reflect-metadata';
+import 'es6-shim';
 import express from 'express';
 import next from 'next';
 

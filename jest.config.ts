@@ -6,7 +6,15 @@
 export default {
   clearMocks: true,
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!**/*.d.ts', '!**/node_modules/**'],
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.{ts,tsx}',
+    '!<rootDir>/**/*.d.ts',
+    '!<rootDir>/node_modules/**',
+    '!<rootDir>/src/server/index.ts',
+    '!<rootDir>/src/**/interfaces/*.ts',
+    '!<rootDir>/src/server/config/*.ts',
+    '!<rootDir>/**/pages/_*.tsx',
+  ],
   coverageDirectory: 'coverage',
 
   // An array of regexp pattern strings used to skip coverage collection

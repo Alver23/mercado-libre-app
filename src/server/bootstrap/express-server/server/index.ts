@@ -6,6 +6,12 @@ import healthCheck from 'express-healthcheck';
 // Interfaces
 import { IBootstrap } from '@alversoft/server/bootstrap/interfaces';
 
+// Middlewares
+import RequestLogger from '@alversoft/server/core/middlewares/request-logger';
+
+// Config
+import config from '@alversoft/server/config';
+
 // Template server
 import ServerTemplate from '../server-template';
 
@@ -25,6 +31,9 @@ class Server extends ServerTemplate implements IBootstrap {
     this.server.disable('x-powered-by');
     this.server.set('trust proxy', true);
     this.server.use(cookieParser());
+    if (!config.isProduction) {
+      this.server.use(RequestLogger.handler());
+    }
   }
 
   protected async setRoutes(): Promise<void> {
