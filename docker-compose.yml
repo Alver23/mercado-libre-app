@@ -1,0 +1,13 @@
+version: '3'
+services:
+  frontend-app:
+    container_name: mercado-libre-app
+    image: mercado-libre-app
+    build:
+      context: ./
+      dockerfile: ./docker/node/Dockerfile
+    environment:
+      - NODE_ENV=${NODE_ENV}
+    ports:
+      - 3000:${PORT}
+    restart: always

@@ -1,0 +1,8 @@
+{
+  "*.{ts,tsx}": [
+    "npm run lint:fix"
+  ],
+  "*.scss": [
+    "npm run stylelint:fix"
+  ]
+}
