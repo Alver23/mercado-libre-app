@@ -9,7 +9,7 @@ import rateLimit from 'express-rate-limit';
 import { IBootstrap } from '@alversoft/server/bootstrap/interfaces';
 
 // Middlewares
-import FourOFour from '@alversoft/server/core/middlewares/404';
+import FourOrFour from '@alversoft/server/core/middlewares/404';
 import ResponseToJson from '@alversoft/server/core/middlewares/response';
 import ErrorHandler from '@alversoft/server/core/middlewares/error-handler';
 import WrapperError from '@alversoft/server/core/middlewares/wrapper-error';
@@ -26,7 +26,7 @@ class ApiServer extends ServerTemplate implements IBootstrap {
   }
 
   protected errorHandlers(): void {
-    this.server.use(FourOFour.handler());
+    this.server.use(FourOrFour.handler());
     this.server.use(WrapperError.handler());
     this.server.use(ErrorHandler.handler());
   }

@@ -3,7 +3,7 @@ import { ReactElement } from 'react';
 import type { AppProps, NextWebVitalsMetric } from 'next/app';
 
 // Styles
-import '../client/styles/globals.css';
+import '../client/styles/globals.scss';
 
 const App = ({ Component, pageProps }: AppProps): ReactElement => <Component {...pageProps} />;
 

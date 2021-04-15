@@ -7,7 +7,7 @@ import RouteNotFoundException from './exceptions';
 // Models
 import { IMiddleware } from '../interfaces';
 
-class FourOFour implements IMiddleware {
+class FourOrFour implements IMiddleware {
   handler(): RequestHandler {
     return (req: Request, res: Response, next: NextFunction) => {
       next(new RouteNotFoundException(req.originalUrl));
@@ -15,4 +15,4 @@ class FourOFour implements IMiddleware {
   }
 }
 
-export default new FourOFour();
+export default new FourOrFour();

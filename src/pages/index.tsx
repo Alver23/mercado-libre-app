@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { ReactElement } from 'react';
 
 // Styles
-import styles from '../client/styles/Home.module.css';
+import styles from '../client/styles/Home.module.scss';
 
 const Home = (): ReactElement => {
   return (

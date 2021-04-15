@@ -24,6 +24,12 @@ class Server extends ServerTemplate implements IBootstrap {
     this.server.set('port', this.port);
   }
 
+  private setDevelopmentMiddlewares() {
+    if (!config.isProduction) {
+      this.server.use(RequestLogger.handler());
+    }
+  }
+
   // eslint-disable-next-line class-methods-use-this,@typescript-eslint/no-empty-function
   protected errorHandlers(): void {}
 
@@ -31,9 +37,7 @@ class Server extends ServerTemplate implements IBootstrap {
     this.server.disable('x-powered-by');
     this.server.set('trust proxy', true);
     this.server.use(cookieParser());
-    if (!config.isProduction) {
-      this.server.use(RequestLogger.handler());
-    }
+    this.setDevelopmentMiddlewares();
   }
 
   protected async setRoutes(): Promise<void> {
