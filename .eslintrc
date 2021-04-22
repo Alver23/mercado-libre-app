@@ -39,6 +39,9 @@
     "react/react-in-jsx-scope": 0,
     "react/require-default-props": "off",
     "@typescript-eslint/no-unused-vars": ["error"],
-    "@typescript-eslint/no-namespace": "off"
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"]
   }
 }

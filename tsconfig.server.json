@@ -7,8 +7,6 @@
 		"isolatedModules": false,
 		"noEmit": false,
 		"baseUrl": "src",
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
 		"esModuleInterop": true,
 		"moduleResolution": "node",
 		"resolveJsonModule": true

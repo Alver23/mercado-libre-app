@@ -14,15 +14,21 @@ import ResponseToJson from '@alversoft/server/core/middlewares/response';
 import ErrorHandler from '@alversoft/server/core/middlewares/error-handler';
 import WrapperError from '@alversoft/server/core/middlewares/wrapper-error';
 
+// Routes
+import Routes from './routes';
+
 // Template server
 import ServerTemplate from '../server-template';
 
 class ApiServer extends ServerTemplate implements IBootstrap {
   protected server: Application;
 
+  private readonly routes: Routes;
+
   constructor(server: Application) {
     super();
     this.server = server;
+    this.routes = new Routes(this.server);
   }
 
   protected errorHandlers(): void {
@@ -48,9 +54,7 @@ class ApiServer extends ServerTemplate implements IBootstrap {
   }
 
   protected setRoutes(): void {
-    this.server.get('/users', (req, res) => {
-      res.status(200).json({ name: 'Alver Grisales' });
-    });
+    this.routes.publicRoutes();
   }
 }
 

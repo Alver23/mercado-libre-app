@@ -1,4 +1,6 @@
 // Dependencies
+import 'reflect-metadata';
+import 'es6-shim';
 import supertest from 'supertest';
 import express, { Application } from 'express';
 
@@ -14,6 +16,6 @@ describe('ApiServer', () => {
 
   it('should start a server', async (done) => {
     const apiServerInstance = await apiServer.initialize();
-    supertest(apiServerInstance).get('/users').set('Accept', 'application/json').expect(200, done);
+    supertest(apiServerInstance).get('/v1/items').set('Accept', 'application/json').expect(200, done);
   });
 });

@@ -1,0 +1,34 @@
+{
+  "request": {
+    "price": 6899,
+    "currency_id": "ARS",
+    "prices": {
+      "id": "MLA912456604",
+      "prices": [
+        {
+          "id": "9",
+          "type": "standard",
+          "conditions": {
+            "context_restrictions": [],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "amount": 6899,
+          "regular_amount": null,
+          "currency_id": "ARS",
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {},
+          "last_updated": "2021-04-20T19:38:46Z"
+        }
+      ],
+      "presentation": {
+        "display_currency": "ARS"
+      },
+      "payment_method_prices": [],
+      "reference_prices": [],
+      "purchase_discounts": []
+    }
+  },
+  "response": {"amount": 6899, "currency": "ARS", "decimals": 2}
+}
