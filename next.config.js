@@ -9,6 +9,14 @@ const baseUrl = '';
 const nextConfig = {
 	basePath: baseUrl,
 	reactStrictMode: true,
+  async rewrites() {
+    return [
+      {
+        source: '/items',
+        destination: '/products',
+      },
+    ]
+  },
 }
 
 module.exports = withBundleAnalyzer(nextConfig)

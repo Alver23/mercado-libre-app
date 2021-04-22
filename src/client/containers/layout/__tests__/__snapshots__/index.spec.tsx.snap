@@ -2,7 +2,9 @@
 
 exports[`<Layout /> should save a snapshot of the component 1`] = `
 <Fragment>
-  <Header />
+  <Header>
+    <SearchBar />
+  </Header>
   <div
     className="h-full min-h-86"
   />

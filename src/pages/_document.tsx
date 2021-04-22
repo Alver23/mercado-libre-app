@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang={Config.locale}>
         <Head />
-        <body>
+        <body className="bg-gray-400">
           <Main />
           <NextScript />
         </body>

@@ -7,6 +7,15 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
+      colors: {
+        gray: {
+          400: '#EEEEEE',
+          500: '#999999'
+        },
+        yellow: {
+          600: '#FFE600',
+        }
+      },
       minHeight: {
         '86': '86vh'
       }

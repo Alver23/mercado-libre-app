@@ -6,8 +6,8 @@ import Config from '@alversoft/client/core/config';
 
 const Footer = (): ReactElement => {
   return (
-    <footer className="flex justify-center items-center bg-white h-12 relative clear-both">
-      <p className="text-gray-500 text-sm text-center">
+    <footer className="flex justify-center items-center bg-white h-12 bg-gray-400">
+      <p className="text-gray-500 text-center text-lg">
         Copyright © 1999-{new Date().getFullYear()} {Config.siteName} LTDA.
       </p>
     </footer>
