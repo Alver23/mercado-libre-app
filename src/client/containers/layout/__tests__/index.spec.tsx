@@ -2,13 +2,18 @@
 import { shallow, ShallowWrapper } from 'enzyme';
 
 // Under test file
-import Custom404 from '@alversoft/pages/404';
+import Layout from '../index';
 
-describe('<Custom404 />', () => {
+describe('<Layout />', () => {
+  const props = {
+    meta: <></>,
+    children: <></>,
+  };
+
   let component: ShallowWrapper;
 
   beforeEach(() => {
-    component = shallow(<Custom404 />);
+    component = shallow(<Layout {...props} />);
   });
 
   it('should save a snapshot of the component', () => {

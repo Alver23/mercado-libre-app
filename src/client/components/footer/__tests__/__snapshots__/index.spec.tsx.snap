@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should save a snapshot of the component 1`] = `
+<footer
+  className="flex justify-center items-center bg-white h-12 bg-gray-400"
+>
+  <p
+    className="text-gray-500 text-center text-lg"
+  >
+    Copyright © 1999-
+    2021
+     
+    fake test
+     LTDA.
+  </p>
+</footer>
+`;

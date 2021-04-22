@@ -14,7 +14,7 @@ export default {
     '!<rootDir>/src/**/interfaces/*.ts',
     '!<rootDir>/src/server/**/interfaces/**/*.ts',
     '!<rootDir>/src/server/**/domain/**/*.ts',
-    '!<rootDir>/src/server/config/*.ts',
+    '!<rootDir>/src/**/config/*.ts',
     '!<rootDir>/**/pages/_*.tsx',
   ],
   coverageDirectory: 'coverage',
@@ -130,16 +130,16 @@ export default {
   // runner: "jest-runner",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  setupFiles: ['@testing-library/react/dont-cleanup-after-each'],
+  setupFilesAfterEnv: ['<rootDir>/config/jest/setup.ts'],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  setupFilesAfterEnv: ['<rootDir>/config/jest/setup-tests.js'],
+  // setupFilesAfterEnv: [],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
 
   // A list of paths to snapshot serializer modules Jest should use for snapshot testing
-  // snapshotSerializers: [],
+  snapshotSerializers: ['enzyme-to-json/serializer'],
 
   // The test environment that will be used for testing
   // testEnvironment: "jest-environment-jsdom",

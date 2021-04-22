@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should save a snapshot of the component 1`] = `
+<header
+  className="h-24 bg-yellow-600 flex justify-center items-center"
+>
+  <nav
+    className="container mx-auto flex justify-center items-center"
+  >
+    <div
+      className="w-full lg:w-10/12"
+    >
+      <div
+        className="flex flex-row"
+      >
+        <Link
+          href="/"
+        >
+          <a
+            className="mr-12 flex justify-center items-center"
+          >
+            <Image
+              alt="Mercado libre"
+              height={36}
+              src="/assets/logo.png"
+              width={54}
+            />
+          </a>
+        </Link>
+        <div
+          className="w-full"
+        />
+      </div>
+    </div>
+  </nav>
+</header>
+`;

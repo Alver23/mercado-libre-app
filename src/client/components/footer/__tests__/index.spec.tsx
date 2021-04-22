@@ -2,13 +2,16 @@
 import { shallow, ShallowWrapper } from 'enzyme';
 
 // Under test file
-import Custom404 from '@alversoft/pages/404';
+import Footer from '../index';
 
-describe('<Custom404 />', () => {
+// Mocks
+jest.mock('@alversoft/client/core/config', () => ({ siteName: 'fake test' }));
+
+describe('<Footer />', () => {
   let component: ShallowWrapper;
 
   beforeEach(() => {
-    component = shallow(<Custom404 />);
+    component = shallow(<Footer />);
   });
 
   it('should save a snapshot of the component', () => {

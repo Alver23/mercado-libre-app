@@ -1,15 +1,17 @@
 // Dependencies
-import { act, render, screen } from '@testing-library/react';
+import { shallow, ShallowWrapper } from 'enzyme';
 
 // Under test file
 import Home from '@alversoft/pages';
 
 describe('<Home />', () => {
-  jest.useFakeTimers();
+  let component: ShallowWrapper;
 
-  it('should render correctly', () => {
-    render(<Home />);
-    act(() => jest.advanceTimersByTime(1000));
-    expect(screen).toMatchSnapshot();
+  beforeEach(() => {
+    component = shallow(<Home />);
+  });
+
+  it('should save a snapshot of the component', () => {
+    expect(component).toMatchSnapshot();
   });
 });

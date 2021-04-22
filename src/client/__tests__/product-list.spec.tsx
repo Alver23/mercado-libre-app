@@ -2,13 +2,13 @@
 import { shallow, ShallowWrapper } from 'enzyme';
 
 // Under test file
-import Custom404 from '@alversoft/pages/404';
+import ProductList from '@alversoft/pages/products';
 
-describe('<Custom404 />', () => {
+describe('<ProductList />', () => {
   let component: ShallowWrapper;
 
   beforeEach(() => {
-    component = shallow(<Custom404 />);
+    component = shallow(<ProductList />);
   });
 
   it('should save a snapshot of the component', () => {

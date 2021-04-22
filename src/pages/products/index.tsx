@@ -5,10 +5,12 @@ import { ReactElement } from 'react';
 import Layout from '@alversoft/client/containers/layout';
 import Meta from '@alversoft/client/containers/meta';
 
-const Home = (): ReactElement => (
-  <Layout meta={<Meta title="Home" />}>
-    <></>
+const ProductList = (): ReactElement => (
+  <Layout meta={<Meta title="Product List" />}>
+    <div>
+      <p>Product list</p>
+    </div>
   </Layout>
 );
 
-export default Home;
+export default ProductList;
