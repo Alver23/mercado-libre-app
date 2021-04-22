@@ -1,5 +1,5 @@
 // Dependencies
-import { render, screen } from '@testing-library/react';
+import { shallow, ShallowWrapper } from 'enzyme';
 
 // Under test file
 import Layout from '../index';
@@ -10,9 +10,13 @@ describe('<Layout />', () => {
     children: <></>,
   };
 
-  it('should render correctly', () => {
-    render(<Layout {...props} />);
-    const linkElement = screen.getByText('Home');
-    expect(linkElement).toBeInTheDocument();
+  let component: ShallowWrapper;
+
+  beforeEach(() => {
+    component = shallow(<Layout {...props} />);
+  });
+
+  it('should save a snapshot of the component', () => {
+    expect(component).toMatchSnapshot();
   });
 });

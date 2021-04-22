@@ -1,12 +1,17 @@
 // Dependencies
-import { render, screen } from '@testing-library/react';
+import { shallow, ShallowWrapper } from 'enzyme';
 
 // Under test file
 import Custom404 from '@alversoft/pages/404';
 
 describe('<Custom404 />', () => {
-  it('should render correctly', () => {
-    render(<Custom404 />);
-    expect(screen).toMatchSnapshot();
+  let component: ShallowWrapper;
+
+  beforeEach(() => {
+    component = shallow(<Custom404 />);
+  });
+
+  it('should save a snapshot of the component', () => {
+    expect(component).toMatchSnapshot();
   });
 });

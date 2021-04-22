@@ -1,15 +1,17 @@
 // Dependencies
-import { render, screen, act } from '@testing-library/react';
+import { shallow, ShallowWrapper } from 'enzyme';
 
 // Under test file
 import Header from '../index';
 
 describe('<Header />', () => {
-  it('should render correctly', () => {
-    render(<Header />);
-    act(() => {
-      const linkElement = screen.getByText('Home');
-      expect(linkElement).toBeInTheDocument();
-    });
+  let component: ShallowWrapper;
+
+  beforeEach(() => {
+    component = shallow(<Header />);
+  });
+
+  it('should save a snapshot of the component', () => {
+    expect(component).toMatchSnapshot();
   });
 });

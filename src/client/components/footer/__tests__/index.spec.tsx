@@ -1,5 +1,5 @@
 // Dependencies
-import { render, screen, cleanup } from '@testing-library/react';
+import { shallow, ShallowWrapper } from 'enzyme';
 
 // Under test file
 import Footer from '../index';
@@ -8,11 +8,13 @@ import Footer from '../index';
 jest.mock('@alversoft/client/core/config', () => ({ siteName: 'fake test' }));
 
 describe('<Footer />', () => {
-  afterEach(cleanup);
+  let component: ShallowWrapper;
 
-  it('should render correctly', () => {
-    render(<Footer />);
-    const linkElement = screen.getAllByText('fake test');
-    expect(linkElement).toBeInTheDocument();
+  beforeEach(() => {
+    component = shallow(<Footer />);
+  });
+
+  it('should save a snapshot of the component', () => {
+    expect(component).toMatchSnapshot();
   });
 });

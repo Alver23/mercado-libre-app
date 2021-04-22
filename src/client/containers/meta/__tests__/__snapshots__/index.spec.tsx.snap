@@ -1,3 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Meta /> should render correctly 1`] = `<head />`;
+exports[`<Meta /> should save a snapshot of the component 1`] = `
+<Head>
+  <meta
+    charSet="UTF-8"
+  />
+  <meta
+    content="width=device-width,initial-scale=1"
+    name="viewport"
+  />
+  <link
+    href="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.3/mercadolibre/favicon.svg"
+    key="favicon"
+    rel="icon"
+  />
+  <title>
+    fake title | undefined
+  </title>
+  <meta
+    key="description"
+    name="description"
+  />
+  <meta
+    key="author"
+    name="author"
+  />
+  <meta
+    content="fake title | undefined"
+    key="og:title"
+    property="og:title"
+  />
+  <meta
+    key="og:description"
+    property="og:description"
+  />
+  <meta
+    key="og:locale"
+    property="og:locale"
+  />
+  <meta
+    key="og:site_name"
+    property="og:site_name"
+  />
+</Head>
+`;
