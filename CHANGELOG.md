@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/Alver23/mercado-libre-app/compare/v1.0.0...v1.0.1) (2021-04-22)
+
+
+### Bug Fixes
+
+* added env API_GATEWAY in the ci.yml ([91238ef](https://github.com/Alver23/mercado-libre-app/commit/91238ef9e2aefe7fdf24e67b81efb5a3bad1207d))
+* fixed eslint errors ([2db4195](https://github.com/Alver23/mercado-libre-app/commit/2db41952280c7c9923a8a62fab655feda09d784b))
+
 ## [1.0.0](https://github.com/Alver23/mercado-libre-app/compare/v0.1.1...v1.0.0) (2021-04-15)
 
 ### 0.1.1 (2021-04-15)
