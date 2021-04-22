@@ -9,7 +9,7 @@ import { fakeServer } from '@alversoft/server/__mocks__/fake-server';
 import ResponseToJson from '../index';
 
 // Models
-import { ICustomResponse } from '../interfaces';
+import ICustomResponse from '../interfaces';
 
 describe('addResponseJsonToResponse', () => {
   fakeServer.use(ResponseToJson.handler());

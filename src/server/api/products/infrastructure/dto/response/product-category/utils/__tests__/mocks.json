@@ -1,0 +1,42 @@
+{
+  "request": {
+    "withValues": {
+      "categories": [
+        {
+          "id": "category",
+          "name": "Categorías",
+          "type": "text",
+          "values": [
+            {
+              "id": "MLA409810",
+              "name": "Audio",
+              "path_from_root": [
+                {
+                  "id": "MLA1000",
+                  "name": "Electrónica, Audio y Video"
+                },
+                {
+                  "id": "MLA409810",
+                  "name": "Audio"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "withoutValues": {
+      "categories": [
+        {
+          "id": "category",
+          "name": "Categorías",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  "response": [
+    "Electrónica, Audio y Video",
+    "Audio"
+  ]
+}

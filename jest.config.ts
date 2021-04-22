@@ -12,6 +12,8 @@ export default {
     '!<rootDir>/node_modules/**',
     '!<rootDir>/src/server/index.ts',
     '!<rootDir>/src/**/interfaces/*.ts',
+    '!<rootDir>/src/server/**/interfaces/**/*.ts',
+    '!<rootDir>/src/server/**/domain/**/*.ts',
     '!<rootDir>/src/server/config/*.ts',
     '!<rootDir>/**/pages/_*.tsx',
   ],
@@ -149,10 +151,7 @@ export default {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  // testMatch: [
-  //   "**/__tests__/**/*.[jt]s?(x)",
-  //   "**/?(*.)+(spec|test).[tj]s?(x)"
-  // ],
+  testMatch: ['**/__tests__/**/*.ts', '**/__tests__/**/*.tsx'],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],

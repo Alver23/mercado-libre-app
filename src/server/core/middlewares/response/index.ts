@@ -6,7 +6,7 @@ import { NextFunction, Request, RequestHandler } from 'express';
 import setResponse from '@alversoft/server/utils/set-response';
 
 // Interfaces
-import { ICustomResponse } from './interfaces';
+import ICustomResponse from './interfaces';
 import { IMiddleware } from '../interfaces';
 
 class ResponseToJson implements IMiddleware {

@@ -12,8 +12,6 @@ import HttpServer from '@alversoft/server/bootstrap/http-server';
 // Config
 import config from '@alversoft/server/config';
 
-import '@alversoft/shared';
-
 // Utils
 import { normalizePort } from '@alversoft/server/utils/http-server';
 import ApiServer from './bootstrap/express-server/api';
