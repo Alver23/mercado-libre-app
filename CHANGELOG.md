@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/Alver23/mercado-libre-app/compare/v1.0.1...v1.1.0) (2021-04-22)
+
+
+### Features
+
+* added enzyme , and remove testing library ([802c596](https://github.com/Alver23/mercado-libre-app/commit/802c596da1632264e7d577939406eea4fec3ac7a))
+* added footer, and header component ([48846ca](https://github.com/Alver23/mercado-libre-app/commit/48846ca6c9fa0abd29e59c4b7920ec5729642b65))
+* added search bar component ([8e85938](https://github.com/Alver23/mercado-libre-app/commit/8e85938e35ee96d922d1ef5181dd0b9adc049b1b))
+
 ### [1.0.1](https://github.com/Alver23/mercado-libre-app/compare/v1.0.0...v1.0.1) (2021-04-22)
 
 
