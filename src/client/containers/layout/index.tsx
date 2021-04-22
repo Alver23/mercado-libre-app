@@ -5,6 +5,9 @@ import { FC, ReactElement } from 'react';
 import Footer from '@alversoft/client/components/footer';
 import Header from '@alversoft/client/components/header';
 
+// Containers
+import SearchBar from '@alversoft/client/containers/search-bar';
+
 // Interfaces
 import ILayoutProps from './interfaces';
 
@@ -12,7 +15,9 @@ const Layout: FC<ILayoutProps> = ({ meta, children }: ILayoutProps): ReactElemen
   return (
     <>
       {meta}
-      <Header />
+      <Header>
+        <SearchBar />
+      </Header>
       <div className="h-full min-h-86">{children}</div>
       <Footer />
     </>

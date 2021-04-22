@@ -2,20 +2,36 @@
 
 exports[`<Header /> should save a snapshot of the component 1`] = `
 <header
-  className="text-gray-600 body-font bg-white"
+  className="h-24 bg-yellow-600 flex justify-center items-center"
 >
-  <div
-    className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+  <nav
+    className="container mx-auto flex justify-center items-center"
   >
-    <Link
-      href="/"
+    <div
+      className="w-full lg:w-10/12"
     >
-      <span
-        className="ml-3 text-xl"
+      <div
+        className="flex flex-row"
       >
-        Home
-      </span>
-    </Link>
-  </div>
+        <Link
+          href="/"
+        >
+          <a
+            className="mr-12 flex justify-center items-center"
+          >
+            <Image
+              alt="Mercado libre"
+              height={36}
+              src="/assets/logo.png"
+              width={54}
+            />
+          </a>
+        </Link>
+        <div
+          className="w-full"
+        />
+      </div>
+    </div>
+  </nav>
 </header>
 `;
