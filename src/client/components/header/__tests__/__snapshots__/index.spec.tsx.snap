@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should save a snapshot of the component 1`] = `
+<header
+  className="text-gray-600 body-font bg-white"
+>
+  <div
+    className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+  >
+    <Link
+      href="/"
+    >
+      <span
+        className="ml-3 text-xl"
+      >
+        Home
+      </span>
+    </Link>
+  </div>
+</header>
+`;
