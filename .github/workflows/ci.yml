@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -28,6 +28,10 @@ jobs:
       with:
         envkey_SONARQUBE_HOST_URL: ${{ secrets.SONARQUBE_HOST_URL }}
         envkey_SONARQUBE_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
+        envkey_PORT: 3000
+        envkey_API_GATEWAY_URL: "https://api.mercadolibre.com/"
+        envkey_AUTHOR_FIRST_NAME: "Alver Alexander"
+        envkey_AUTHOR_LAST_NAME: "Grisales Ortega"
         file_name: .env
     - run: npm ci
     - run: npm run lint

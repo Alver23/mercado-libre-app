@@ -1,4 +1,6 @@
 // Dependencies
 import { Response } from 'express';
 
-export type ICustomResponse = Response & { responseJson: () => void };
+type ICustomResponse = Response & { responseJson: () => void };
+
+export default ICustomResponse;
