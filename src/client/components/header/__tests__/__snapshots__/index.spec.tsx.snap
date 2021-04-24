@@ -2,7 +2,7 @@
 
 exports[`<Header /> should save a snapshot of the component 1`] = `
 <header
-  className="h-24 bg-yellow-600 flex justify-center items-center"
+  className="h-14 md:h-16 bg-yellow-600 flex justify-center items-center"
 >
   <nav
     className="container mx-auto flex justify-center items-center"
@@ -17,7 +17,7 @@ exports[`<Header /> should save a snapshot of the component 1`] = `
           href="/"
         >
           <a
-            className="mr-12 flex justify-center items-center"
+            className="mx-2 md:mr-6 flex justify-center items-center"
           >
             <Image
               alt="Mercado libre"
@@ -28,7 +28,7 @@ exports[`<Header /> should save a snapshot of the component 1`] = `
           </a>
         </Link>
         <div
-          className="w-full"
+          className="w-9/12 md:w-full"
         />
       </div>
     </div>

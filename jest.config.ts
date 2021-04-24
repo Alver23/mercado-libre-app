@@ -11,7 +11,7 @@ export default {
     '!<rootDir>/**/*.d.ts',
     '!<rootDir>/node_modules/**',
     '!<rootDir>/src/server/index.ts',
-    '!<rootDir>/src/**/interfaces/*.ts',
+    '!<rootDir>/src/**/interfaces/**/*.ts',
     '!<rootDir>/src/server/**/interfaces/**/*.ts',
     '!<rootDir>/src/server/**/domain/**/*.ts',
     '!<rootDir>/src/**/config/*.ts',

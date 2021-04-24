@@ -9,11 +9,18 @@ const baseUrl = '';
 const nextConfig = {
 	basePath: baseUrl,
 	reactStrictMode: true,
+  images: {
+	  domains: ['http2.mlstatic.com']
+  },
   async rewrites() {
     return [
       {
         source: '/items',
         destination: '/products',
+      },
+      {
+        source: '/items/:slug',
+        destination: '/products/:slug',
       },
     ]
   },

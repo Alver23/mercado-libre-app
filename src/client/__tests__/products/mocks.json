@@ -1,0 +1,24 @@
+{
+  "data": {
+    "author": {
+      "lastName": "Grisales Ortega",
+      "name": "Alver Alexander"
+    },
+    "items": [
+      {
+        "condition": "new",
+        "freeShipping": true,
+        "id": "MLA853662269",
+        "picture": "http://http2.mlstatic.com/D_922186-MLA41184540762_032020-I.jpg",
+        "price": {
+          "amount": 19999,
+          "currency": "ARS",
+          "decimals": 2
+        },
+        "title": "Auriculares In-ear Bose Soundsport In-ear Headphones Charcoal"
+      }
+    ],
+    "categories": ["Fake text 1", "fake test 2"]
+  },
+  "searchText": "fake search Text"
+}
