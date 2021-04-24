@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/Alver23/mercado-libre-app/compare/v1.1.0...v1.2.0) (2021-04-24)
+
+
+### Features
+
+* added product detail page ([bc32abd](https://github.com/Alver23/mercado-libre-app/commit/bc32abdbdde165aeb0d62f532eb88ed354fdcd46))
+* added product list page ([4dce9cd](https://github.com/Alver23/mercado-libre-app/commit/4dce9cd81565c8e781659786c162ed05f4dde3bf))
+* added product service ([5347c82](https://github.com/Alver23/mercado-libre-app/commit/5347c825a9a9439ab0cf1766bd10a1b8b056bbe7))
+* fixed testing product detail ([ae14274](https://github.com/Alver23/mercado-libre-app/commit/ae14274a0e29d7caa3e63659566f84fced54804d))
+
 ## [1.1.0](https://github.com/Alver23/mercado-libre-app/compare/v1.0.1...v1.1.0) (2021-04-22)
 
 
