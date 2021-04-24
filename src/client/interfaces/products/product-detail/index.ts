@@ -1,4 +1,4 @@
-// Entities
+// Interfaces
 import IProductBase from '../product-base';
 import IProductAuthor from '../product-author';
 
@@ -8,6 +8,7 @@ export interface IItem extends IProductBase {
 }
 interface IProductDetail {
   author: IProductAuthor;
+  categories: string[];
   item: IItem;
 }
 

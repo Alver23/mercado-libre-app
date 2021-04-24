@@ -47,12 +47,15 @@ class ProductAdapter implements IProductAdapter {
     return productList;
   }
 
-  private productTranformer(
+  private async productTranformer(
     response: [IProductDetailApiResponse, IProductDetailDescriptionAPIResponse]
-  ): IProductDetail {
+  ): Promise<IProductDetail> {
     const [productDetailApiResponse, productDescriptionApiResponse] = response;
+    const { category_id: categoryId } = productDetailApiResponse;
+    const categories = await this.getCategoryById(categoryId);
     const data = {
       author: config.author,
+      categories,
       item: {
         ...productDetailApiResponse,
         description: productDescriptionApiResponse.plain_text,
@@ -68,12 +71,24 @@ class ProductAdapter implements IProductAdapter {
     return categoryNameList.categories;
   }
 
+  private getCategoryById(id: string): Promise<string[]> {
+    const url = this.endpoints.v1.categoryDetail(id);
+    return new Promise((resolve) => {
+      const onSuccess = (response: any) => {
+        const { path_from_root: pathFromRoot } = response;
+        const categoryNameList = pathFromRoot.map((item) => item.name);
+        resolve(categoryNameList);
+      };
+      this.http.get(url).then(onSuccess);
+    });
+  }
+
   public getProduct(id: string): Promise<IProductDetail> {
     const productDetailUrl = this.endpoints.v1.productDetail(id);
     const productDetailDescriptionUrl = this.endpoints.v1.productDescription(id);
     return new Promise<IProductDetail>((resolve, reject) => {
-      const onSuccess = (response: [IProductDetailApiResponse, IProductDetailDescriptionAPIResponse]) =>
-        resolve(this.productTranformer(response));
+      const onSuccess = async (response: [IProductDetailApiResponse, IProductDetailDescriptionAPIResponse]) =>
+        resolve(await this.productTranformer(response));
       const onError = () => reject(new ProductNotFoundException());
       Promise.all([
         this.http.get<IProductDetailApiResponse>(productDetailUrl),

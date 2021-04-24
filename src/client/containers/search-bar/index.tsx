@@ -22,7 +22,7 @@ const SearchBar: FC = (): ReactElement => {
         className="focus:outline-none bg-gray-400 w-20 flex justify-center items-center"
         onClick={handleClick}
       >
-        <img width={16} src="./assets/icon-search.png" alt="Search icon" />
+        <img width={16} src="/assets/icon-search.png" alt="Search icon" />
       </button>
     </form>
   );
