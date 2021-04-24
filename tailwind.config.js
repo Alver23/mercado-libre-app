@@ -14,6 +14,9 @@ module.exports = {
         },
         yellow: {
           600: '#FFE600',
+        },
+        black: {
+          500: '#333333'
         }
       },
       minHeight: {
