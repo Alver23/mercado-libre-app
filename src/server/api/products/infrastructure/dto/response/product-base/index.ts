@@ -35,17 +35,15 @@ class ProductBaseResponse implements IProductBase {
   })
   picture: string;
 
-  @Expose({ name: 'price' })
+  @Expose({ name: 'prices' })
   @Type(() => ProductPriceResponse)
   @Transform(({ obj }) => {
     return getPrice(obj);
   })
-  prices: ProductPriceResponse;
+  price: ProductPriceResponse;
 
   @Expose()
   title: string;
-
-  price: any;
 }
 
 export default ProductBaseResponse;

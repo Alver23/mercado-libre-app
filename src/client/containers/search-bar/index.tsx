@@ -10,7 +10,7 @@ const SearchBar: FC = (): ReactElement => {
   return (
     <form className="flex flex-row w-full">
       <input
-        className="w-full rounded font-light rounded-r-none text-3xl text-gray-500 placeholder-gray-500 bg-white h-16 px-6 pr-6 focus:outline-none"
+        className="w-full rounded font-light rounded-r-none text-base md:text-lg text-gray-500 placeholder-gray-500 bg-white h-10 px-6 pr-6 focus:outline-none"
         type="text"
         name="search"
         value={searchValue}

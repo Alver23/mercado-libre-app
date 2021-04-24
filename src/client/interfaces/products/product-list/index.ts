@@ -1,4 +1,4 @@
-// Entities
+// Interfaces
 import IProductBase from '../product-base';
 import IProductAuthor from '../product-author';
 

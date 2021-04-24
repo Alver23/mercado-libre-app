@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductList /> should save a snapshot of the component 1`] = `
+<Layout
+  meta={
+    <Meta
+      title="fake search Text"
+    />
+  }
+>
+  <div
+    className="container mx-auto flex justify-center items-center"
+  >
+    <div
+      className="w-11/12 lg:w-10/12"
+    >
+      <div>
+        <Breadcrumb
+          items={
+            Array [
+              "Fake text 1",
+              "fake test 2",
+            ]
+          }
+        />
+      </div>
+      <section
+        className="bg-white px-6 rounded"
+      >
+        <ProductList
+          items={
+            Array [
+              Object {
+                "condition": "new",
+                "freeShipping": true,
+                "id": "MLA853662269",
+                "picture": "http://http2.mlstatic.com/D_922186-MLA41184540762_032020-I.jpg",
+                "price": Object {
+                  "amount": 19999,
+                  "currency": "ARS",
+                  "decimals": 2,
+                },
+                "title": "Auriculares In-ear Bose Soundsport In-ear Headphones Charcoal",
+              },
+            ]
+          }
+        />
+      </section>
+    </div>
+  </div>
+</Layout>
+`;

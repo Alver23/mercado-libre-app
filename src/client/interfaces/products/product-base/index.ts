@@ -1,4 +1,4 @@
-// Entities
+// Interfaces
 import IProductPrice from '../product-price';
 
 interface IProductBase {
