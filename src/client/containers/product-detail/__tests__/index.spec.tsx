@@ -16,7 +16,8 @@ describe('<ProductDetail />', () => {
     component = shallow(<ProductDetail {...props} />);
   });
 
-  it('should save a snapshot of the component', () => {
-    expect(component).toMatchSnapshot();
+  it('should render correctly', () => {
+    const titleText = component.find('p').filterWhere((element) => element.text() === mocks.title);
+    expect(titleText.text()).toBe(mocks.title);
   });
 });
