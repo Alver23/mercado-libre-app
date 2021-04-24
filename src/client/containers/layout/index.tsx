@@ -18,7 +18,7 @@ const Layout: FC<ILayoutProps> = ({ meta, children }: ILayoutProps): ReactElemen
       <Header>
         <SearchBar />
       </Header>
-      <div className="h-full min-h-86">{children}</div>
+      <div className="h-full min-h-83">{children}</div>
       <Footer />
     </>
   );

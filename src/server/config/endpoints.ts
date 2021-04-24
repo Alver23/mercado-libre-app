@@ -17,5 +17,8 @@ export default {
     productDescription(id: string): string {
       return `${this.basePath}items/${id}/description`;
     },
+    categoryDetail(id: string): string {
+      return `${this.basePath}categories/${id}`;
+    },
   },
 };

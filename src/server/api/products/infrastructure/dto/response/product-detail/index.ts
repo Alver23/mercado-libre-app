@@ -16,6 +16,9 @@ class ProductDetailResponse implements IProductDetail {
   @Type(() => Item)
   @Expose()
   item: Item;
+
+  @Expose()
+  categories: string[];
 }
 
 export default ProductDetailResponse;

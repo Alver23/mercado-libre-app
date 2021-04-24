@@ -67,7 +67,8 @@ describe('ProductAdapter', () => {
       jest
         .spyOn(internalAxiosInstance, 'get')
         .mockResolvedValueOnce(mocks.item)
-        .mockResolvedValueOnce(mocks.itemDescription);
+        .mockResolvedValueOnce(mocks.itemDescription)
+        .mockResolvedValueOnce(mocks.category);
 
       const response = await productAdapter.getProduct('MLA905983453');
       expect(response).toEqual(

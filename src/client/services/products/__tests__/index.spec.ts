@@ -45,7 +45,7 @@ describe('ProductService', () => {
           items: expect.arrayContaining([
             expect.objectContaining({
               ...expectedProductBase(),
-              prices: expectedPrices(),
+              price: expectedPrices(),
             }),
           ]),
         })
@@ -63,7 +63,7 @@ describe('ProductService', () => {
             ...expectedProductBase(),
             soldQuantity: expect.any(Number),
             description: expect.any(String),
-            prices: expectedPrices(),
+            price: expectedPrices(),
           }),
         })
       );
