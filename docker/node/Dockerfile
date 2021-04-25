@@ -21,6 +21,7 @@ FROM node:14-alpine AS runner
 WORKDIR /opt/app
 COPY --from=builderProp /opt/app/next.config.js ./
 COPY --from=builderProp /opt/app/package.json ./package.json
+COPY --from=builderProp /opt/app/newrelic.js ./
 COPY --from=builderProp /opt/app/public ./public
 COPY --from=builderProp /opt/app/.next ./.next
 COPY --from=builderProp /opt/app/node_modules ./node_modules

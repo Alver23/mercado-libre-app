@@ -18,7 +18,7 @@ const ProductDetail: FC<IProductDetailProps> = ({
   return (
     <div className="grid grid-cols-3 gap-4">
       <div className="col-span-3 md:col-span-2">
-        <div className="md:ml-16">
+        <div className="md:ml-16 mt-6">
           <Image src={picture} alt={title} width={680} height={680} />
         </div>
       </div>
