@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Alver23/mercado-libre-app/compare/v1.2.0...v1.3.0) (2021-04-25)
+
+
+### Features
+
+* added dcoker-compose prod ([891c79a](https://github.com/Alver23/mercado-libre-app/commit/891c79ae19566dcf355246f82b7522ce4e105b94))
+* added margin top in the image detail ([ba9ae72](https://github.com/Alver23/mercado-libre-app/commit/ba9ae7290f141091d6ce4c915135eb3a00281f88))
+
+
+### Bug Fixes
+
+* ficed bug ignore scss files ([4b70cfc](https://github.com/Alver23/mercado-libre-app/commit/4b70cfcb99014a32e472e0755c4d7805a128bc24))
+
 ## [1.2.0](https://github.com/Alver23/mercado-libre-app/compare/v1.1.0...v1.2.0) (2021-04-24)
 
 
