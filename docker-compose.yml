@@ -2,12 +2,12 @@ version: '3'
 services:
   frontend-app:
     container_name: mercado-libre-app
-    image: 379708643002.dkr.ecr.us-east-1.amazonaws.com/mercado-libre-app
+    image: alver23/mercado-libre
     build:
       context: ./
       dockerfile: ./docker/node/Dockerfile
     environment:
-      - NODE_ENV=${NODE_ENV}
+      - NODE_ENV=3000
     ports:
-      - 3000:${PORT}
+      - 80:3000
     restart: always
