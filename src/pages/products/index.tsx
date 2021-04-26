@@ -46,7 +46,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
     return {
       props: {
         data,
-        searchText,
+        searchText: searchText ?? 'Product List',
       },
     };
   } catch (e) {
