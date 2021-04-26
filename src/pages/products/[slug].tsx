@@ -22,9 +22,9 @@ interface IProductDetailPage {
 
 const ProductDetailPage = ({ data }: IProductDetailPage): ReactElement => {
   const { item, categories } = data;
-  const { title } = item;
+  const { title, description } = item;
   return (
-    <Layout meta={<Meta title={title} />}>
+    <Layout meta={<Meta title={title} description={description} />}>
       <div className="container mx-auto flex justify-center items-center">
         <div className="w-11/12 lg:w-10/12">
           <div>
