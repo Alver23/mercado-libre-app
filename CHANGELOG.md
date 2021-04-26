@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/Alver23/mercado-libre-app/compare/v1.3.0...v2.0.0) (2021-04-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* generate version 2
+
+* update readmed file ([c35c35c](https://github.com/Alver23/mercado-libre-app/commit/c35c35c274b7afbb9855d36f7768db741faba7ab))
+
 ## [1.3.0](https://github.com/Alver23/mercado-libre-app/compare/v1.2.0...v1.3.0) (2021-04-25)
 
 
